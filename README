@@ -14,9 +14,8 @@ git://github.com/rotteneggs/RottenEggs-App-Example---Badges.git
 
 Requirements
 ------------
-* php 5.1+
+* php 5.1+  (with JSON, CURL extensions)
 * mysql (see database schema)
 * web server (apache,lighttpd,nginx)
 * curl with extension for php (yum install php-curl)
 * API key from RottenEggs.com
-
