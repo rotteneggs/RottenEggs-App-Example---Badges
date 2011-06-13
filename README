@@ -1,0 +1,22 @@
+RottenEggs App/API Example - Badges
+=====================
+
+What is this?
+----------------------
+This is an example of how an app can be developed using the RottenEggs API 
+framework.  It is written in PHP and requires MySQL, a standard LAMP setup is
+recommended.
+
+Download
+--------
+You can download the current version of the app via git/github.
+git://github.com/rotteneggs/RottenEggs-App-Example---Badges.git
+
+Requirements
+------------
+* php 5.1+
+* mysql (see database schema)
+* web server (apache,lighttpd,nginx)
+* curl with extension for php (yum install php-curl)
+* API key from RottenEggs.com
+
