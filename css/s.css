@@ -1,0 +1,209 @@
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, font, img, ins, kbd, q, s, samp,
+	small, strike, sub, sup, tt, var,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		font-weight: inherit;
+		font-style: inherit;
+		font-size: 100%;
+		font-family: inherit;
+		vertical-align: baseline;
+		font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;	
+	}
+	ol, ul {list-style: none;}
+	table {
+		border-collapse: separate;
+		border-spacing: 0;
+	}
+	caption, th, td {
+		text-align: left;
+		font-weight: normal;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {content: "";}
+	blockquote, q {quotes: "" "";}
+	
+	a {
+		text-decoration:none;	
+	}
+
+	/* END RESETS */
+
+	body {	
+		background-image: url(/obj/apps/SiteAchievements/img/bg.jpg);
+		background-repeat: no-repeat;
+		background-color:#000;
+		font-size:1em;
+	}
+	
+	#header {
+		height:100px;
+	}
+	
+	.navigation {
+		height:30px;
+		
+	}
+	.navigation li {		
+		text-align:center;
+		padding:7px;
+		margin:3px;
+		background-color:#069;
+		color:#FFF;
+		font-weight:bold;
+		width:115px;
+		float:left;
+		font-size:.7em;
+		cursor:pointer;
+	}
+	.navigation .sel {
+		background-color:#09C;			
+	}
+	.navigation .sel a {
+		text-decoration:none !important;
+	}		
+	.navigation .sel:hover {
+		background-color:#09C !important;			
+	}
+	.navigation li:hover {
+		background-color:#09C;
+	}
+	.navigation li a {
+		color:#FFF;	
+	}
+	.navigation .nameHead{
+		background-color:#C00;
+	}
+	
+	.appBody {
+		clear:both;	
+	}
+	
+	.badgeRow {
+		padding:10px;
+		position:relative;
+		height:35px;
+		width:600px;
+		background-color:#FFF;
+		margin-top:3px;
+		filter:alpha(opacity=90);-moz-opacity:0.9;-khtml-opacity: 0.9;opacity: 0.9;	
+		overflow:hidden;
+	}
+	.badgeRow img {
+		position:absolute;
+		left:3px;
+		top:0px;
+		
+	}
+	
+	.badgeRow .name {
+		top:15px;
+		left:35px;
+		width:175px;		
+		position:absolute;
+		overflow:hidden;
+	}
+	.badgeRow .desc, .badgeRow .claimed,.badgeRow .unclaimed,.badgeRow .rank  {	
+		top:15px;
+		width:200px;
+		left:200px;
+		position:absolute;
+		font-size:.8em;
+		overflow:hidden;
+	}
+	.badgeRow .rank {
+		left:430px;
+		font-size:2em;
+		top:10px;
+	}
+	.badgeRow .claimed {	
+		left:420px;
+		width:105px;
+		background-color:#063;
+		color:#FFF;
+		text-align:center;
+		padding:4px;
+	}
+	.badgeRow .unclaimed {	
+		left:420px;
+		width:105px;
+		background-color:#C00;
+		color:#FFF;
+		text-align:center;
+		cursor:pointer;
+	}
+	.noBadges {
+		padding:25px;
+		text-align:center;
+		color:#FFF;
+	}
+	.nameHeadline {
+		position:absolute;		
+		text-align:center;
+	}
+	.nameHeadline a {
+		color:#FFF;	
+	}
+	.myPos  {
+		background-color:#FFC !important;
+	}
+	.leaderRow {
+		
+	}
+	.leaderRow .name {
+		left:65px !important;
+	}
+	.leaderRow img{
+		height:55px;
+	}
+	
+#actions  {
+	height:27px;	
+}
+#actions .prev, #actions .next {
+	position:absolute;
+	width:150px;
+	height:20px;
+	text-align:center;	
+	color:#FFF;
+	background-color:#333;
+	font-size:.8em;
+	cursor:pointer;
+	z-index:1000;
+}
+#actions .next {
+	right:0px;	
+}
+#actions .prev:hover,#actions .next:hover {
+	background-color:#900;
+}
+	
+/* root element for scrollable */
+.scrollable {
+
+	/* required settings */
+	position:relative;
+	overflow:hidden;
+
+	/* vertical scrollables have typically larger height than width but not now */
+	height: 430px;
+	
+}
+
+/* root element for scrollable items */
+.scrollable .items {
+	position:absolute;
+
+	/* this time we have very large space for the height */
+	height:20000em;
+}
+
+
+
